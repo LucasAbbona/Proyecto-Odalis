@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login for Admin</title>
+    <link rel="stylesheet" href="./styles/loginStyle.css">
+</head>
+<body>
+    <main class="login_bg">
+        <div class="login_contenedor">
+            <h1>Login User</h1>
+            <form action="./includes/login.inc.php" method="post">
+                <label for="">Correo</label>
+                <input type="text" class="login_inpt" placeholder="Ingrese su correo" name="correo">
+                <label for="">Contraseña</label>
+                <input type="password" class="login_inpt" placeholder="Ingrese su contraseña" name="contraseña">
+                <input type="submit" name="Login" class="login_btn" value="Login">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

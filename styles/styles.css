@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    background-color: #1D242C;
+}
+.logo{
+    margin-left: 100px;
+    padding-top: 10px;
+}
+.logo img{
+    width: 150px;
+}
+.secciones{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-right: 70px;
+}
+.secciones li a{
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.secciones li a:hover{
+    color: #0176C3;
+}
+.secciones li .active{
+    color: #0176C3;
+}
+.fotoPrincipal{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/home/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fotoPrincipal div{
+    height: 100%;
+    width: 100%;
+    background-color: #1d242c7a;
+}
+.HomeServicios{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.HomeServicios h2{
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.tarjetasService{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 55px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.26);
+}
+.tarjetasService .bg_tajetas1{
+    background-image: url("../images/galeria/WhatsApp\ Image\ 2023-01-03\ at\ 23.36.11\ \(1\).jpeg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+.tarjetasService .bg_tajetas2{
+    background-image: url("../images/galeria/WhatsApp\ Image\ 2023-01-03\ at\ 23.44.48.jpeg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+.tarjetasService .bg_tajetas3{
+    background-image: url("../images/galeria/WhatsApp\ Image\ 2023-01-03\ at\ 23.36.08\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+.tarjetasService .textContent{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+    height: 100%;
+    
+}
+.responsiveTitle{
+    display: none;
+}
+.textContent h3{
+    position: absolute;
+    top: 15px;
+    font-weight: 400;
+    font-size: 30px;
+}
+.textContent p{
+    text-align: center;
+    font-size: 19px;
+}
+.textContent a{
+    position: absolute;
+    bottom: 50px;
+    text-decoration: none;
+    background-color: #0176C3;
+    padding-block: 10px;
+    padding-inline: 7px;
+    color: #FAFAFA;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.textContent a:hover{
+    background-color: #006fb9;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.253);
+}
+.GaleriaAdvertisement{
+    width: 80%;
+    margin: auto;
+    height: 550px;
+    font-family: 'Raleway', sans-serif;
+}
+.GaleriaAdvertisement h2{
+    font-size: 40px;
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+.GaleriaAdvertisement .GaleryImageContainer{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/home/galery.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.GaleryImageContainer div a{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: #FAFAFA;
+    background-color: #0176C3;
+    padding-block: 15px;
+    padding-inline: 10px;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.253);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.GaleryImageContainer div a:hover{
+    background-color: #006fb9;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.253);
+}
+.backdropfilter{
+    width: 100%;
+    height: 100%;
+    background-color: #1d242c6c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-areas: "logo info vacio";
+    background-color: #1D242C;
+    height: 200px;
+}
+.FootLogo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+    margin-right: 30px;
+}
+.FootLogo img{
+    width: 180px;
+}
+.FootInfo{
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    color: #FAFAFA;
+}
+.FootInfo h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+.FootInfo div{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.FootInfo div a{
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 25px;
+}
+.FootInfo p{
+    font-family: 'Lato', sans-serif;
+}
+.FootFiller{
+    grid-area: vacio;
+}
+.instagram{
+    transition:all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+.facebook{
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.tel{
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.instagram:hover{
+    margin-inline: -9px;
+    margin-block: -8px;
+    padding-inline: 9px;
+    padding-block: 8px;
+    border-radius: 50%;
+    background-image: linear-gradient(12deg, #FFCC70 0%, #C850C0 46%, #4158D0 100%);
+}
+.facebook:hover{
+    margin-inline: -9px;
+    margin-block: -8px;
+    padding-inline: 9px;
+    padding-block: 8px;
+    border-radius: 50%;
+    background-color: #1877f2;
+}
+.tel:hover{
+    margin-inline: -9px;
+    margin-block: -8px;
+    background-color: #25d366;
+    padding-inline: 9px;
+    padding-block: 8px;
+    border-radius: 50%;
+}
+.icono{
+    font-size: 25px;
+}
+.backtotop{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #FAFAFA;
+    position: fixed;
+    bottom: 100px;
+    right: 80px;
+    font-size: 45px;
+    color: #1D242C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.411);
+}
+.responsiveMenu{
+    display: none;
+}
+.navegacion2{
+    display: none;
+}
+.secciones2{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    }
+
+@media (max-width:800px) {
+header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 200;
+}
+.secciones{
+    display: none;
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    margin: 0;
+}
+.navegacion2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.secciones2{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    margin-top: 12px;
+    padding: 15px;
+    width: 100%;
+    background-color: #1D242C;
+    z-index: 200;
+}
+.secciones2 li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #FAFAFA;
+    font-family: 'Raleway', sans-serif;
+}
+.responsiveMenu{
+    display: block;
+    margin-right: 35px;
+    font-size: 28px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    background-color: #1D242C;
+    color: #FAFAFA;
+    border: none;
+}
+.fotoPrincipal{
+    margin-top: 120px;
+}
+.responsiveTitle{
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+    margin-block: 15px;
+}
+.textContent h3{
+    display: none;
+}
+.tarjetasService{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    padding: 15px;
+}
+.tarjetasService .bg_tajetas1,.tarjetasService .bg_tajetas2,.tarjetasService .bg_tajetas3{
+    width: 100%;
+}
+.tarjetasService .textContent{
+    padding: 0px;
+    width: 100%;
+    margin-top: -100px;
+}
+.GaleriaAdvertisement h2 {
+    width: 100%;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+.FootLogo{
+    margin: 0;
+}
+.FootInfo{
+    gap: 15px;
+}
+.backtotop{
+    display: none;
+}
+    
+}

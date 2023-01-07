@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.navegacionAdmin{
+    height: 70px;
+    width: 100%;
+    background-color: #1D242C;
+    position: fixed;
+    top: 0;
+}
+.navegacionAdmin ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+.navegacionAdmin ul li{
+    color: #fafafa;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 30px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 100%;
+}
+.navegacionAdmin ul li:hover{
+    background-color: #0176C3;
+    
+    
+}
+.navegacionAdmin ul li a{
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 400;
+}
+.navegacionAdmin ul .volverAdmin{
+    position: absolute;
+    left: 0;
+    height: 70px;
+}
+
+/* Add */
+
+.formularioGaleria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    margin: auto;
+    margin-top: 120px;
+    gap: 30px;
+    
+}
+.formularioGaleria label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.formularioGaleria select{
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+}
+.SubirBtn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #0176C3;
+    color: #fafafa;
+    border: none;
+    cursor: pointer;
+}
+.SubirBtn:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+    background-color: #0060a0;
+}
+.admin_titulo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* View */
+
+.ViewContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-inline: 5%;
+    margin-bottom: 50px;
+}
+.ViewFotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1D242C;
+    width: 30%;
+    height: 550px;
+    grid-area: 15px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.ViewFotos img{
+    width: 100%;
+    height: 90%;
+}
+.ViewFotos div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5px;
+    gap: 15px;
+    align-items: center;
+}
+.ViewFotos div h3{
+    text-align: center;
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: 400;
+}
+.ViewFotos div a{
+    background-color: red;
+    color: #fafafa;
+    text-decoration: none;
+    padding-inline: 7px;
+    border-radius: 8px;
+    padding-block: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.507);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.ViewFotos div a:hover{
+    background-color: rgb(187, 0, 0);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.747);
+}
+.ViewSubtitles{
+    margin-top: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+.noContenido{
+    color: #fafafa;
+    text-align: center;
+    margin: auto;
+}
+
+/* Responsive */
+
+@media (max-width:800px) {
+    .navegacionAdmin ul {
+        gap: 15px;
+    }
+    .navegacionAdmin ul li{
+        padding-inline: 0px;
+        font-size: 15px;
+    }
+    .navegacionAdmin ul .volverAdmin{
+        left: 20px;
+    }
+    .navegacionAdmin ul .titulo_admin_{
+        display: none;
+    }
+    .admin_titulo{
+        margin-top: 130px;
+    }
+    .ViewContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ViewFotos{
+        width: auto;
+    }
+}
+@media (max-width:500px){
+    .navegacionAdmin ul {
+        gap: 15px;
+        justify-content: end;
+        margin-right: 20px;
+    }
+}
